@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Checking account_little <= 0.5\ngini = 0.41\nsamples = 627\nvalue = [287, 713]\nclass = 1: bad", fillcolor="#89c4ef"] ;
+1 [label="Checking account_moderate <= 0.5\ngini = 0.33\nsamples = 450\nvalue = [153, 569]\nclass = 1: bad", fillcolor="#6eb7ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Monthly pay <= 0.01\ngini = 0.22\nsamples = 286\nvalue = [58, 406]\nclass = 1: bad", fillcolor="#55abe9"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 5\nvalue = [5, 5]\nclass = 0: good", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="gini = 0.21\nsamples = 281\nvalue = [53, 401]\nclass = 1: bad", fillcolor="#53aae8"] ;
+2 -> 4 ;
+5 [label="Credit amount <= 0.66\ngini = 0.47\nsamples = 164\nvalue = [95, 163]\nclass = 1: bad", fillcolor="#acd6f4"] ;
+1 -> 5 ;
+6 [label="gini = 0.46\nsamples = 158\nvalue = [88, 163]\nclass = 1: bad", fillcolor="#a4d2f3"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 6\nvalue = [7, 0]\nclass = 0: good", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="Monthly pay <= 0.03\ngini = 0.5\nsamples = 177\nvalue = [134, 144]\nclass = 1: bad", fillcolor="#f1f8fd"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Credit amount <= 0.01\ngini = 0.43\nsamples = 51\nvalue = [59, 27]\nclass = 0: good", fillcolor="#f1bb94"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 4\nvalue = [0, 11]\nclass = 1: bad", fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label="gini = 0.34\nsamples = 47\nvalue = [59, 16]\nclass = 0: good", fillcolor="#eca36f"] ;
+9 -> 11 ;
+12 [label="Monthly pay <= 0.04\ngini = 0.48\nsamples = 126\nvalue = [75, 117]\nclass = 1: bad", fillcolor="#b8dcf6"] ;
+8 -> 12 ;
+13 [label="gini = 0.23\nsamples = 39\nvalue = [9, 58]\nclass = 1: bad", fillcolor="#58ace9"] ;
+12 -> 13 ;
+14 [label="gini = 0.5\nsamples = 87\nvalue = [66, 59]\nclass = 0: good", fillcolor="#fcf2ea"] ;
+12 -> 14 ;
+}
